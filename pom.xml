@@ -16,7 +16,7 @@
 </distributionManagement>
 
 <build>
- <finalName>script</finalName>
+ <finalName>webapp</finalName>
   <plugins>
   <plugin>
    <groupId>org.sonatype.plugins</groupId>
@@ -51,6 +51,13 @@
    </build>
   
   <dependencies>
+
+<dependency>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.2</version>
+</dependency>
+
   <dependency>
 <groupId>org.sonarsource.scanner.maven</groupId>
 <artifactId>sonar-maven-plugin</artifactId>
